@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Slideshow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    img {height: 350px; width: 250px;}
+    .mySlides {display:none;}
+</style>
+
+</head>
+<body>
+<div class="w3-container w3-auto">
+  <div class="w3-gray"><h1>St.Louis Highschools</h1></div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:500px">
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/lindbergh.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-green">Lindbergh High School</div>
+    </div>
+
+
+
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/oakville.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-yellow">Oakville High School</div>
+    </div>
+
+
+
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/Mehlville.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-black">Mehlville High School</div>
+    </div>
+
+
+
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/webster.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-orange">Webster Groves High School</div>
+    </div>
+
+
+
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/kirkwood.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-red">Kirkwood High School</div>
+    </div>
+
+
+
+    <div class="w3-display-container mySlides w3-text-green w3-xlarge">
+    <img src="slideshowpicutres/afton.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-large w3 w3-container w3-padding-12 w3-blue">Afton High School</div>
+    </div>
+
+
+
+<!-- do not change this, these are your buttons for navigating through images-->
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<!-- DO NOT CHANGE ANYTHING BELOW THIS LINE-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!-- CHANGE FOOTER-->
+<footer>
+    <div class="w3-panel w3-gray w3-center w3-auto">
+        <h3>Thomas Madrid 2025</h3>
+        <a href="index.html">Home</a>
+    </div>
+</footer>
+</body>
+</html>
