@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dropdowns and Accordions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    <div class="w3-container w3-auto">
+        <div class="w3-panel w3-center">
+  <h2> Fun Facts About Ice Cream</h2></div>
+ 
+  <!-- Question #1 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container w3-auto">
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align "
+style="width: 50%">1. What's the most popular ice cream flavor? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>Vanilla</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+<div class="w3-container w3-auto">
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align "
+style="width: 50%">2. What's the second most popular ice cream flavor? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo2" class="w3-container w3-hide">
+  <h4>Chocolate</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+
+<div class="w3-container w3-auto">
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-black w3-left-align "
+style="width: 50%">1. What's the most popular ice cream flavor? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo3" class="w3-container w3-hide">
+  <h4>Vanilla</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+
+<div class="w3-container w3-auto">
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-black w3-left-align "
+style="width: 50%">1. What's the most popular ice cream flavor? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo4" class="w3-container w3-hide">
+  <h4>Vanilla</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+
+<!-- footer with your name on it -->
+
+<div class="w3-center">
+    <footer> CHANGE ME </footer>
+</div>
+
+<!-- DO NOT CHANGE THE SCRIPT -->
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+</body>
+</html>
